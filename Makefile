@@ -1,5 +1,5 @@
 #
-# Makefile for esp-link - https://github.com/jeelabs/esp-link
+# Makefile for esp-link - https://github.com/UMN-VR/GoldyLink
 #
 # Makefile heavily adapted to esp-link and wireless flashing by Thorsten von Eicken
 # Lots of work, in particular to support windows, by brunnels

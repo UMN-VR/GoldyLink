@@ -48,7 +48,7 @@ To flash firmware onto the esp8266 via the serial port the following must be obs
 
 ### Initial serial flashing
 
-Download the latest [release](https://github.com/jeelabs/esp-link/releases) or use the
+Download the latest [release](https://github.com/UMN-VR/GoldyLink/releases) or use the
 `user1.bin` file that is produced by the build process.
 You will need to flash the bootloader, the `user1.bin` firmware, blank wifi settings, and init data
 as described below.
@@ -76,7 +76,7 @@ On Linux using esptool.py this turns into the following for a 32mbit=4MByte flas
 such as an esp-12 module typically has (_substitute the appropriate release number and bootloader
 version number_):
 ```
-curl -L https://github.com/jeelabs/esp-link/releases/download/v2.2.3/esp-link-v2.2.3.tgz | \
+curl -L https://github.com/UMN-VR/GoldyLink/releases/download/v2.2.3/esp-link-v2.2.3.tgz | \
     tar xzf -
 cd esp-link-v2.2.3
 esptool.py --port /dev/ttyUSB0 --baud 230400 write_flash -fs 32m -ff 80m \
@@ -87,7 +87,7 @@ I use a high baud rate as shown above because I'm impatient, but that's not requ
 
 ### 4Mbit / 512Kbyte module
 ```
-curl -L https://github.com/jeelabs/esp-link/releases/download/v2.2.3/esp-link-v2.2.3.tgz | \
+curl -L https://github.com/UMN-VR/GoldyLink/releases/download/v2.2.3/esp-link-v2.2.3.tgz | \
     tar xzf -
 cd esp-link-v2.2.3
 esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash -fs 4m -ff 40m \

@@ -201,7 +201,7 @@ If you're a little python challenged (like I am) then the following install inst
 
 Using esptool.py a esp-link release can be flashed as follows:
 ```
-curl -L https://github.com/jeelabs/esp-link/releases/download/0.10.1/esp-link.tgz | tar xzf -
+curl -L https://github.com/UMN-VR/GoldyLink/releases/download/0.10.1/esp-link.tgz | tar xzf -
 cd esp-link
 esptool.py write_flash 0x00000 boot_v1.4\(b1\).bin 0x1000 user1.bin 0x7e000 blank.bin
 ```

@@ -18,7 +18,7 @@ RUN curl -Ls http://s3.voneicken.com/esp_iot_sdk_v2.1.0.tgx | tar -Jxf -
 ENV XTENSA_TOOLS_ROOT /xtensa-lx106-elf/bin/
 
 # This could be used to create an image with esp-link in it from github:
-#RUN git clone https://github.com/jeelabs/esp-link
+#RUN git clone https://github.com/UMN-VR/GoldyLink
 
 # This could be used to create an image with esp-link in it from the local dir:
 #COPY . esp-link/

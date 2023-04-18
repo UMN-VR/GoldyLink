@@ -67,11 +67,11 @@ and 3.x will be the addition of custom web pages (this is not ready yet).
 - The master branch is currently unstable as we integrate a number of new features to get
   to version 3.0. Please use v2.2.3 unless you want to hack up the latest code!
   This being said, the older functionality seems to work fine on master, YMMV...
-- [V2.2.3](https://github.com/jeelabs/esp-link/releases/tag/v2.2.3) is the most recent release.
+- [V2.2.3](https://github.com/UMN-VR/GoldyLink/releases/tag/v2.2.3) is the most recent release.
   It has a built-in stk500v1 programmer (for AVRs), work on all modules, and supports mDNS,
   sNTP, and syslog. It is built using the Espressif SDK 1.5.4.
-- [V2.1.7](https://github.com/jeelabs/esp-link/releases/tag/v2.1.7) is the previous release.
-- See [all releases](https://github.com/jeelabs/esp-link/releases).
+- [V2.1.7](https://github.com/UMN-VR/GoldyLink/releases/tag/v2.1.7) is the previous release.
+- See [all releases](https://github.com/UMN-VR/GoldyLink/releases).
 
 ## Esp-link goals
 

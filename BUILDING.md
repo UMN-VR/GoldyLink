@@ -2,7 +2,7 @@ Building esp-link
 =================
 
 Before you build esp-link, consider that you can download ready-made firmware images!
-Just head over to the [release section](https://github.com/jeelabs/esp-link/releases)
+Just head over to the [release section](https://github.com/UMN-VR/GoldyLink/releases)
 and download the tgz archive.
 
 If you decide to build your own, there are a number of options:
@@ -53,7 +53,7 @@ Sample steps to build esp-link v2.2.3 on a Win7 Pro x64 (these use the docker te
 are multiple way to skin the proverbial cat...):
 1) Install Docker Toolbox ( http://www.docker.com/products/docker-toolbox )
 2) Install Git Desktop ( https://desktop.github.com/ )
-3) Clone esp-link from Github master to local repository ( https://github.com/jeelabs/esp-link )
+3) Clone esp-link from Github master to local repository ( https://github.com/UMN-VR/GoldyLink )
 4) Open Docker Quickstart Terminal
 5) cd to local esp-link git repository ( C:\Users\xxxxx\Documents\GitHub\esp-link )
 6) Run "docker run -v $PWD:/esp-link jeelabs/esp-link" command in Docker Quickstart Terminal window
