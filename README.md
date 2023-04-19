@@ -3,6 +3,7 @@
 #### This project is a work in progress. 
 
 ![GoldyLink index page](Images/GoldyLink-Start.png)
+![GoldyLink index page](Gifs/GoldyLink_Web_UART.gif)
 
 
 # Quick Start Guide
