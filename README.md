@@ -1,13 +1,14 @@
 # GoldyLink: Wifi-Serial Bridge w/REST&MQTT
 
 **Forked from** [https://github.com/jeelabs/esp-link](https://github.com/jeelabs/esp-link)
-* [Why you **shoudn't** use original repo](#why-you-shoudn't-use-original-repo)
+
+[Why you **shoudn't** use original repo](#why-you-shoudn't-use-original-repo)
 
 **The `master` branch of this fork has been updated to integrate all changes**
 **from `fix-master` and `platformio`.**
 **This branch now builds with PlatformIO.**
 
-![GoldyLink index page](https://cloud.githubusercontent.com/assets/39480/19333951/73fcdcbe-90ad-11e6-8572-5e654377275a.png)
+![GoldyLink index page](Images/Why-not-original.png)
 
 The GoldyLink firmware connects a micro-controller to the internet using an ESP8266 Wifi module.
 It implements a number of features:
@@ -172,6 +173,9 @@ will most likely see what you typed being echoed twice. If you are on a linux sy
 telnet and issue a `mode char` command (in telnet, hit the escape char `^]` and type `mode
 char` at the prompt). If you are using putty on Windows, open the connection settings and
 in the terminal settings set both `local echo` and `local line editing` to `off`.
+
+### Why you shoudn't use original
+
 
 Contact
 -------
