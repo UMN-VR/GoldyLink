@@ -1,14 +1,9 @@
 # GoldyLink: Wifi-Serial Bridge w/REST&MQTT
 
-**Forked from** [https://github.com/jeelabs/esp-link](https://github.com/jeelabs/esp-link)
+![GoldyLink index page](Images/GoldyLink-Start.png)
 
-[Why you **shoudn't** use original repo](#why-you-shoudn't-use-original-repo)
+### [Quickstart Guide](QuickStart.md)
 
-**The `master` branch of this fork has been updated to integrate all changes**
-**from `fix-master` and `platformio`.**
-**This branch now builds with PlatformIO.**
-
-![GoldyLink index page](Images/Why-not-original.png)
 
 The GoldyLink firmware connects a micro-controller to the internet using an ESP8266 Wifi module.
 It implements a number of features:
@@ -38,9 +33,15 @@ The following people contributed significant functionality to GoldyLink:
 [bc547](https://github.com/bc547) and [katast](https://github.com/katast) (misc contributions).
 GoldyLink is the work of many contributors!
 
-Note that http://github.com/jeelabs/esp-link is the original GoldyLink software which has
-notably been forked by arduino.org and shipped
-with the initial Arduino Uno Wifi. 
+Note that [http://github.com/jeelabs/esp-link](http://github.com/jeelabs/esp-link) is the original code which has notably been forked by arduino.org and shipped
+with the initial Arduino Uno Wifi and now for the GoldyLink software. 
+
+[Why you **shoudn't** use original repo](#why-you-shoudnt-use-original-repo)
+
+
+**The `master` branch of this fork has been updated to integrate all changes**
+**from `fix-master` and `platformio`.**
+**This branch now builds with PlatformIO.**
 
 ### Quick links
 
@@ -174,11 +175,13 @@ telnet and issue a `mode char` command (in telnet, hit the escape char `^]` and 
 char` at the prompt). If you are using putty on Windows, open the connection settings and
 in the terminal settings set both `local echo` and `local line editing` to `off`.
 
-### Why you shoudn't use original
+### Why you shoudn't use original Repo
+![GoldyLink index page](Images/Why-not-original.png)
+The instructions suggest that you should download some programs from a sketchy Russian website. The Executables that they make you download have a different version number than the latest open source available code. Very sketchy stuff. This was the inspiration to start this project. I really liked the code that they posted but I didn't like the way they implemented it so I just updated it to work with platformIO. 
 
-
+I'm not claiming that this project is secure, but I've read over most all of the code, and to the best of my understanding there are no other significant issues other no implementation of wpa3.  
 Contact
 -------
 
 If you find problems with GoldyLink, please create a github issue. If you have a question, please
-use the gitter chat link at the top of this page.
+use the gitter chat link at the top of this page. You may also find it helpful to connect with the [original authors of the code](https://github.com/jeelabs/esp-link). 
