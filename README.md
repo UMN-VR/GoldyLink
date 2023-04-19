@@ -1,5 +1,7 @@
 # ESP-LINK: Wifi-Serial Bridge w/REST&MQTT
 
+**Why not use the original repo?**
+
 **The `master` branch of this fork has been updated to integrate all changes**
 **from `fix-master` and `platformio`.**
 **This branch now builds with PlatformIO.**
