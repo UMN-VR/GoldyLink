@@ -1,6 +1,7 @@
 # ESP-LINK: Wifi-Serial Bridge w/REST&MQTT
 
-**Why not use the original repo?**
+** Forked from [https://github.com/jeelabs/esp-link](https://github.com/jeelabs/esp-link)**
+
 
 **The `master` branch of this fork has been updated to integrate all changes**
 **from `fix-master` and `platformio`.**
