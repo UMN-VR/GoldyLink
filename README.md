@@ -58,7 +58,7 @@ sudo apt install code # or code-insiders
 
  2. Install Platformio & Libraries. 
  3. Download Github Repo 
- 4. Open Project Throught Platformio
+ 4. Open Project through Platformio
  5. Verify that project builds
 
  6. Prepare your ESP8266 module for serial flashing. Make sure that the Serial/UART port, and PWR port are UNPLUGGED from the micro controller while you're flashing the firmware for the ESP8266. Very bad things will happen if you forget to unplug these to you. Also, remember to get a solid USB-C cable that isn't cheap or worn out. You do not want to brick your ESP8266.
