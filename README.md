@@ -1,9 +1,81 @@
 # GoldyLink: Wifi-Serial Bridge w/REST&MQTT
 
+#### This project is a work in progress. 
+
 ![GoldyLink index page](Images/GoldyLink-Start.png)
 
-### [Quickstart Guide](QuickStart.md)
 
+# Quick Start Guide
+Hardware Setup 
+---------------
+The recomended setup is a D1 Mini V4 ESP8266 Board. You may purchase these boards and solder stuff yourself, or in the future I might sell complete, pre-programmed kits with a wire harness for your microcontroller for $10
+
+[D1 Mini Docs](D1 mini)
+![D1 Mini](Images/d1_mini_v4.png)
+
+[Aliexpress](https://www.aliexpress.us/item/2251832676903780.html?spm=a2g0o.order_detail.order_detail_item.3.779ff19ckNFde5&gatewayAdapt=glo2usa&_randl_shipto=US)
+![D1 Mini](Images/d1_mini_v4_aliexpres.png)
+
+
+[Amazon (3x) recomended](https://www.amazon.com/DWEII-NodeMCU-Development-Compatible-MicroPython/dp/B0B8CK8YZR/ref=sr_1_3?crid=2BYV1TJ5I4FB4&keywords=D1%2Bmini%2Bv4&qid=1681922036&sprefix=d1%2Bmini%2Bv4%2Caps%2C106&sr=8-3&th=1)
+![D1 Mini](Images/d1_mini_v4_amazon.png)
+
+(image of GoldyLink Kit)
+(image of GoldyLink Back)
+
+Software Setup 
+---------------
+
+To get started you need to:
+
+ 1. Install VS code on your computer if you do not already have it. 
+
+ Note You can use whatever OS you like, including MacOS & Windows. [Visual Studio Code for Other OS](https://code.visualstudio.com/docs/setup/setup-overview)
+
+ [Visual Studio Code for Linux](https://code.visualstudio.com/docs/setup/linux)
+
+ 
+
+ 
+```
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+```
+
+![VS Code 0](Gifs/GoldyOS_VS_Code_Install0.gif)
+
+This one might take a while :
+
+```
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
+```
+
+
+ 2. Install Platformio & Libraries. 
+ 3. Download Github Repo 
+ 4. Open Project Throught Platformio
+ 5. Verify that project builds
+
+ 6. Prepare your ESP8266 module for serial flashing. Make sure that the Serial/UART port, and PWR port are UNPLUGGED from the micro controller while you're flashing the firmware for the ESP8266. Very bad things will happen if you forget to unplug these to you. Also, remember to get a solid USB-C cable that isn't cheap or worn out. You do not want to brick your ESP8266.
+
+ 7. flash the firmware
+ 8. configure the Wifi in GoldyLink for your network & configure your settings. 
+
+You can then attach a uC and upload a sketch:
+ 1. attach a uC (e.g. arduino) to your esp8266 module
+ 2. connect via the serial port to see a pre-loaded sketch running
+ 3. upload a fresh version of the sketch
+
+From there, more advanced steps are:
+- write a sketch that uses MQTT to communicate, or that makes outbound REST requests
+- create some web pages and write a sketch that populates data in them or reacts to buttons
+  and forms
+- make changes or enhancements to GoldyLink and build your own firmware
 
 The GoldyLink firmware connects a micro-controller to the internet using an ESP8266 Wifi module.
 It implements a number of features:
@@ -134,25 +206,7 @@ attached microcontroller, and the pin assignments card:
 <img width="45%" src="https://cloud.githubusercontent.com/assets/39480/19334011/e0c3fe40-90ad-11e6-9893-847e805e7b89.png">
 <img width="45%" src="https://cloud.githubusercontent.com/assets/39480/19333988/c1858cec-90ad-11e6-8b1c-ffed516e1b7f.png">
 
-Getting Started
----------------
 
-To get started you need to:
- 1. prepare your esp8266 module for serial flashing
- 2. download the latest GoldyLink release image (you can build your own later)
- 3. flash the firmware
- 4. configure the Wifi in GoldyLink for your network
-
-You can then attach a uC and upload a sketch:
- 1. attach a uC (e.g. arduino) to your esp8266 module
- 2. connect via the serial port to see a pre-loaded sketch running
- 3. upload a fresh version of the sketch
-
-From there, more advanced steps are:
-- write a sketch that uses MQTT to communicate, or that makes outbound REST requests
-- create some web pages and write a sketch that populates data in them or reacts to buttons
-  and forms
-- make changes or enhancements to GoldyLink and build your own firmware
 
 ### Serial bridge
 
