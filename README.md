@@ -10,7 +10,7 @@
 # Quick Start Guide
 Hardware Setup 
 ---------------
-The recomended setup is a D1 Mini V4 ESP8266 Board. You may purchase these boards and solder stuff yourself, or in the future I might sell complete, pre-programmed kits with a wire harness for your microcontroller for $10
+The recomended setup is a D1 Mini V4 ESP8266 Board. 
 
 [D1 Mini Docs](D1 mini)
 ![D1 Mini](Images/d1_mini_v4.png)
